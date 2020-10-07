@@ -1,8 +1,8 @@
 package hw7;
 
-public class Orange extends Fruit {
+public class Orange implements Fruit {
     @Override
-    float getWeight() {
-        return 1.5f;
+    public float getWeight() {
+        return 5.5f;
     }
 }

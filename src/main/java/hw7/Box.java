@@ -2,9 +2,10 @@ package hw7;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Box<T extends Fruit> {
-    ArrayList<T> box = new ArrayList<>();
+    List<T> box = new ArrayList<>();
 
     public float getWeight() {
         float weight = 0.0f;
@@ -21,14 +22,12 @@ public class Box<T extends Fruit> {
     }
 
 
-    public boolean compare(Box anotherBox) {
+    public boolean compare(Box<?> anotherBox) {
         return getWeight() == anotherBox.getWeight();
     }
 
     public void tasteFruit() {
         System.out.println(box.get(0).getClass());
     }
-    public void copyBoxer(Box box1,Box box2){
 
-    }
 }

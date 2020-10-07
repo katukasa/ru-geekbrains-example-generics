@@ -1,7 +1,7 @@
 package hw7;
 
-public abstract class Fruit {
-    abstract float getWeight();
+public interface Fruit {
+    float getWeight();
 
 }
 

@@ -1,9 +1,9 @@
 package hw7;
 
-public class Apple extends Fruit {
+public class Apple implements Fruit {
 
     @Override
-    float getWeight() {
-        return 1.0f;
+    public float getWeight() {
+        return 0.9f;
     }
 }
